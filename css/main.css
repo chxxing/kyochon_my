@@ -1,0 +1,144 @@
+/* * {
+    outline: 1px solid blue;
+} */
+
+:root {
+    --mc: #f9b52c;
+    --sc: #b99764;
+    --gc: #dddddd;
+    --wc: #f9f9f9;
+}
+
+.Wrap {
+    letter-spacing: -0.025em;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {}
+
+.header .top_menu {
+    line-height: 35px;
+    border-bottom: 1px solid var(--gc);
+    font-size: 13.1px;
+    font-weight: 300;
+}
+
+.header .top_menu .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .top_menu ul {
+    display: flex;
+    gap: 25px;
+}
+
+.top_menu ul a {
+    display: block;
+}
+
+.header #select {
+    appearance: none;
+    border: none;
+    background: url(../img/chevron-down.svg) no-repeat right/12px;
+    padding: 0 15px 0 0;
+    cursor: pointer;
+}
+
+.header #select option {
+    font-size: 13.1px;
+    font-weight: 300;
+}
+
+.header .menu {
+    line-height: 100px;
+}
+
+.menu .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu nav {
+    text-align: center;
+}
+
+.menu .gnb {
+    display: flex;
+    gap: 40px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.menu .gnb a {
+    display: block;
+}
+
+.menu .gnb li {
+    position: relative;
+}
+
+.menu .gnb>li>a:hover {
+    color: var(--sc);
+}
+
+.menu .gnb li ul {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    top: 87px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+    background: #fff;
+    border: 1px solid #ddd;
+    z-index: 999;
+}
+
+.menu .gnb li:hover ul {
+    display: block;
+}
+
+.menu .gnb li ul::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.menu .gnb ul>li {
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    font-size: 15.5px;
+    font-weight: 400;
+    background: #fff;
+}
+
+.menu .gnb ul li:nth-last-child(1) {
+    border: none;
+}
+
+.menu .gnb ul>li:hover {
+    color: var(--sc);
+}
+
+
+
+
+
+
+.main_visual {
+    height: 600px;
+    background: #333;
+    /* 임시 */
+}
