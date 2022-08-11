@@ -6,7 +6,7 @@
     --mc: #f9b52c;
     --sc: #b99764;
     --gc: #dddddd;
-    --wc: #f9f9f9;
+    --wc: #ffffff;
 }
 
 .Wrap {
@@ -58,6 +58,10 @@
     line-height: 100px;
 }
 
+.header .menu h1 {
+    font-size: 0;
+}
+
 .menu .container {
     display: flex;
     justify-content: space-between;
@@ -95,8 +99,8 @@
     left: 50%;
     transform: translateX(-50%);
     width: 170px;
-    background: #fff;
-    border: 1px solid #ddd;
+    background: var(--wc);
+    border: 1px solid var(--gc);
     z-index: 999;
 }
 
@@ -112,16 +116,16 @@
     transform: translateX(-50%) rotate(45deg);
     width: 18px;
     height: 18px;
-    border: 1px solid #ddd;
-    background: #fff;
+    border: 1px solid var(--gc);
+    background: var(--wc);
 }
 
 .menu .gnb ul>li {
     line-height: 40px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--gc);
     font-size: 15.5px;
     font-weight: 400;
-    background: #fff;
+    background: var(--wc);
 }
 
 .menu .gnb ul li:nth-last-child(1) {
@@ -132,13 +136,67 @@
     color: var(--sc);
 }
 
+.main_visual {}
 
+.main_slider figure {
+    position: relative;
+    height: 700px;
+}
 
+.main_slider .itm01 {
+    background: url(../img/main01.jpg) no-repeat center center/cover;
+}
 
+.main_slider .itm02 {
+    background: url(../img/main02.jpg) no-repeat center center/cover;
+}
 
+.main_slider .itm03 {
+    background: url(../img/main03.jpg) no-repeat center center/cover;
+}
 
-.main_visual {
-    height: 600px;
-    background: #333;
-    /* 임시 */
+.main_slider .itm04 {
+    background: url(../img/main04.jpg) no-repeat center center/cover;
+}
+
+.main_slider .inner {
+    position: absolute;
+    width: 1200px;
+    color: var(--wc);
+    font-family: 'Noto Serif KR', serif;
+    top: 50%;
+    right: calc((100% - 1200px) / 2);
+    transform: translateY(-50%);
+    text-align: right;
+}
+
+.main_slider .inner h2 {
+    font-size: 53px;
+    font-weight: 600;
+    text-shadow: 0 0 1px #000;
+    margin: 0 -5px 20px 0;
+}
+
+.main_slider .inner p {
+    font-size: 21px;
+    font-weight: 500;
+    text-shadow: 0 0 1px #000;
+    margin: 0 0 35px 0;
+}
+
+.main_slider .inner span {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--mc);
+    padding: 8px 30px;
+    border: 1px solid var(--mc);
+}
+
+.main_slider .inner a {
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 900;
+    padding: 8px 30px;
+    border: 1px solid var(--wc);
 }
