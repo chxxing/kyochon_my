@@ -136,7 +136,9 @@
     color: var(--sc);
 }
 
-.main_visual {}
+.main_visual {
+    position: absolute;
+}
 
 .main_slider figure {
     position: relative;
@@ -159,6 +161,10 @@
     background: url(../img/main04.jpg) no-repeat center center/cover;
 }
 
+.main_slider .itm05 {
+    background: url(../img/main05.jpg) no-repeat center center/cover;
+}
+
 .main_slider .inner {
     position: absolute;
     width: 1200px;
@@ -171,14 +177,14 @@
 }
 
 .main_slider .inner h2 {
-    font-size: 53px;
+    font-size: 47px;
     font-weight: 600;
     text-shadow: 0 0 1px #000;
-    margin: 0 -5px 20px 0;
+    margin: 0 -2px 20px 0;
 }
 
 .main_slider .inner p {
-    font-size: 21px;
+    font-size: 19px;
     font-weight: 500;
     text-shadow: 0 0 1px #000;
     margin: 0 0 35px 0;
@@ -186,17 +192,36 @@
 
 .main_slider .inner span {
     display: inline-block;
-    font-size: 17px;
-    font-weight: 500;
+    font-family: 'Noto Sans KR';
+    font-size: 19px;
+    font-weight: 700;
     color: var(--mc);
-    padding: 8px 30px;
-    border: 1px solid var(--mc);
+    border: 2px solid var(--mc);
+    border-radius: 20px;
+    padding: 6px 17px;
+    margin: 0 15px 8px 0;
+    text-shadow: 0 0 1px #000;
+    vertical-align: middle;
 }
 
 .main_slider .inner a {
     display: inline-block;
-    font-size: 19px;
-    font-weight: 900;
-    padding: 8px 30px;
+    font-family: 'Noto Sans KR';
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 17px 10px 20px;
     border: 1px solid var(--wc);
+}
+
+.main_slider .inner i {
+    font-size: 15px;
+    margin: 0 0 0 7px;
+}
+
+.main_arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--wc);
 }
