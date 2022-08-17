@@ -67,30 +67,30 @@
     justify-content: space-between;
 }
 
-.menu nav {
+.menu .gnb {
     text-align: center;
 }
 
-.menu .gnb {
+.menu .gnb>ul {
     display: flex;
     gap: 40px;
     font-size: 17px;
     font-weight: 500;
 }
 
-.menu .gnb a {
+.menu .gnb>ul a {
     display: block;
 }
 
-.menu .gnb li {
+.menu .gnb>ul li {
     position: relative;
 }
 
-.menu .gnb>li>a:hover {
+.menu .gnb>ul>li>a:hover {
     color: var(--sc);
 }
 
-.menu .gnb li ul {
+.menu .smenu {
     position: absolute;
     display: none;
     top: 0;
@@ -104,11 +104,11 @@
     z-index: 999;
 }
 
-.menu .gnb li:hover ul {
+.menu .gnb li:hover .smenu {
     display: block;
 }
 
-.menu .gnb li ul::before {
+.menu .smenu::before {
     content: "";
     position: absolute;
     top: -9px;
@@ -120,7 +120,7 @@
     background: var(--wc);
 }
 
-.menu .gnb ul>li {
+.menu .smenu>li {
     line-height: 40px;
     border-bottom: 1px solid var(--gc);
     font-size: 15.5px;
@@ -128,11 +128,11 @@
     background: var(--wc);
 }
 
-.menu .gnb ul li:nth-last-child(1) {
+.menu .smenu li:nth-last-child(1) {
     border: none;
 }
 
-.menu .gnb ul>li:hover {
+.menu .smenu li:hover {
     color: var(--sc);
 }
 
@@ -205,29 +205,16 @@
     vertical-align: middle;
 }
 
-.main_slider .inner a {
-    display: inline-block;
-    font-family: 'Noto Sans KR';
-    font-size: 15px;
-    font-weight: 500;
-    padding: 10px 17px 10px 20px;
-    border: 1px solid var(--wc);
-}
-
-.main_slider .inner i {
-    font-size: 15px;
-    margin: 0 0 0 7px;
-}
-
 .main_slider .slick-dots li button {
     display: none;
 }
 
 .main_slider .slick-dots {
     position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: calc(50% + 75px);
+    right: calc((100% - 1200px) / 2 - 4px);
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .main_slider .slick-dots li {
@@ -248,21 +235,192 @@
     background: var(--mc);
 }
 
+.main_slider .slick-dots li.slick-active {
+    width: 45px;
+    height: 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 30px;
+}
+
 .main_slider .slick-dots li.slick-active::after {
     width: 100%;
-    border-radius: 50%;
-    transition: 3s;
+    border-radius: 30px;
+    transition: 3.5s;
 }
 
-/* .main .slick-dots li::after {
-    content: "";
+/* 이벤트 */
+.event {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.event .container {
+    width: 1210px;
+    position: relative;
+}
+
+.event h2 {
+    font-size: 27px;
+    font-weight: 500;
+    margin: 0 0 40px 0;
+}
+
+.event figure {
+    padding: 0 5px;
+}
+
+.event img {
+    margin: 0 0 30px 0;
+}
+
+.event a {
     display: block;
-    width: 0;
-    height: 100%;
-    background: #f00;
+    border: 1px solid var(--gc);
 }
 
-.main .slick-dots li.slick-active::after {
-    width: 100%;
-    transition: 3s;
-} */
+.event p {
+    font-size: 17px;
+    margin: 0 0 15px 0
+}
+
+.event span {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 25px 0;
+}
+
+.event .eve_arrows i {
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: var(--gc);
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.event .eve_arrows i:hover {
+    border: 1px solid var(--gc);
+    border-radius: 50%;
+    padding: 10px;
+    color: #333;
+}
+
+.event .eve_arrows i:nth-child(1) {
+    margin: 0 0 0 -660px;
+}
+
+.event .eve_arrows i:nth-child(2) {
+    margin: 0 0 0 660px;
+}
+
+/* 교촌이야기 */
+.about {
+    padding: 100px 0;
+    background: #f9f8f7;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about .story01 {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.about .story01 .story_text {
+    width: 50%;
+    align-self: center;
+}
+
+.about h3 {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.about .story01 h3::before {
+    content: "\275D";
+    position: absolute;
+    font-size: 150px;
+    top: -70px;
+    left: -150px;
+    color: var(--gc);
+}
+
+.about p {
+    font-size: 15.3px;
+    line-height: 1.45;
+}
+
+.about span {
+    display: block;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 15px 0;
+    color: var(--mc);
+}
+
+.about figure {
+    width: 50%;
+}
+
+.about .story02 {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.about .story02 h3::after {
+    content: "\275E";
+    position: absolute;
+    font-size: 150px;
+    bottom: -70px;
+    right: -150px;
+    color: var(--gc);
+}
+
+.about .story02 .story_text {
+    width: 50%;
+    align-self: center;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.quick {
+    display: none;
+    /* none!!!!! */
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.quick .quick_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.quick a {
+    display: block;
+    padding: 30px 50px;
+    background: #ddd;
+}
