@@ -21,9 +21,9 @@
 .header {}
 
 .header .top_menu {
-    line-height: 35px;
+    line-height: 30px;
     border-bottom: 1px solid var(--gc);
-    font-size: 13.1px;
+    font-size: 13.2px;
     font-weight: 300;
 }
 
@@ -45,7 +45,7 @@
     appearance: none;
     border: none;
     background: url(../img/chevron-down.svg) no-repeat right/12px;
-    padding: 0 15px 0 0;
+    padding: 0 15px 1px 0;
     cursor: pointer;
 }
 
@@ -325,7 +325,7 @@
 .about .container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
 }
 
 .about .story01 {
@@ -340,29 +340,42 @@
 }
 
 .about h3 {
-    font-size: 23px;
-    font-weight: 500;
+    font-size: 27px;
+    font-weight: 600;
+    font-family: 'Noto Serif KR', serif;
     margin: 0 0 15px 0;
+}
+
+
+.about .story01 h3::after {
+    content: "";
+    display: inline-block;
+    width: 223px;
+    height: 1px;
+    background: var(--gc);
+    vertical-align: middle;
+    margin: 0 0 2px 25px;
 }
 
 .about .story01 h3::before {
     content: "\275D";
     position: absolute;
-    font-size: 150px;
-    top: -70px;
-    left: -150px;
+    font-size: 170px;
+    top: -90px;
+    left: -100px;
     color: var(--gc);
 }
 
 .about p {
-    font-size: 15.3px;
+    font-size: 15.4px;
     line-height: 1.45;
 }
 
 .about span {
     display: block;
-    font-size: 23px;
+    font-size: 27px;
     font-weight: 700;
+    font-family: 'Noto Serif KR', serif;
     margin: 15px 0;
     color: var(--mc);
 }
@@ -377,12 +390,23 @@
     gap: 30px;
 }
 
+
+.about .story02 h3::before {
+    content: "";
+    display: inline-block;
+    width: 190px;
+    height: 1px;
+    background: var(--gc);
+    vertical-align: middle;
+    margin: 0 25px 2px 0;
+}
+
 .about .story02 h3::after {
     content: "\275E";
     position: absolute;
-    font-size: 150px;
-    bottom: -70px;
-    right: -150px;
+    font-size: 170px;
+    bottom: -130px;
+    right: -100px;
     color: var(--gc);
 }
 
