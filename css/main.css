@@ -816,27 +816,27 @@
 
     .main_slider figure {
         position: relative;
-        height: 700px;
+        height: 70vh;
     }
 
     .main_slider .itm01 {
-        background: url(../img/main01.jpg) no-repeat center center/cover;
+        background: url(../img/main01.jpg) no-repeat left 40% center/cover;
     }
 
     .main_slider .itm02 {
-        background: url(../img/main02.jpg) no-repeat center center/cover;
+        background: url(../img/main02.jpg) no-repeat left 40% center/cover;
     }
 
     .main_slider .itm03 {
-        background: url(../img/main03.jpg) no-repeat center center/cover;
+        background: url(../img/main03.jpg) no-repeat left 40% center/cover;
     }
 
     .main_slider .itm04 {
-        background: url(../img/main04.jpg) no-repeat center center/cover;
+        background: url(../img/main04.jpg) no-repeat left 40% center/cover;
     }
 
     .main_slider .itm05 {
-        background: url(../img/main05.jpg) no-repeat center center/cover;
+        background: url(../img/main05.jpg) no-repeat left 40% center/cover;
     }
 
     .main_slider .inner {
@@ -845,20 +845,21 @@
         color: var(--wc);
         font-family: 'Noto Serif KR', serif;
         top: 50%;
-        right: calc((100% - 1200px) / 2);
+        right: 0;
         transform: translateY(-50%);
+        padding: 0 15px 0 0;
         text-align: right;
     }
 
     .main_slider .inner h2 {
-        font-size: 40px;
+        font-size: 7vw;
         font-weight: 600;
-        text-shadow: 0 0 1px #000;
-        margin: 0 -2px 20px 0;
+        text-shadow: 0 0 2px #000;
+        margin: 0 0px 20px 0;
     }
 
     .main_slider .inner p {
-        font-size: 19px;
+        font-size: 3vw;
         font-weight: 500;
         text-shadow: 0 0 1px #000;
         margin: 0 0 35px 0;
@@ -867,7 +868,7 @@
     .main_slider .inner span {
         display: inline-block;
         font-family: 'Noto Sans KR';
-        font-size: 19px;
+        font-size: 15px;
         font-weight: 700;
         color: var(--mc);
         border: 2px solid var(--mc);
@@ -884,8 +885,9 @@
 
     .main_slider .slick-dots {
         position: absolute;
-        top: calc(50% + 75px);
-        right: calc((100% - 1200px) / 2 - 4px);
+        bottom: 35%;
+        right: 0;
+        padding: 0 15px 0 0;
         transform: translateY(-50%);
         cursor: pointer;
     }
