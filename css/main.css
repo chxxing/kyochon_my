@@ -710,7 +710,7 @@
         gap: 25px;
     }
 
-    .top_menu ul a {
+    .header .top_menu ul a {
         display: block;
     }
 
@@ -728,15 +728,18 @@
     }
 
     .header .menu {
-        line-height: 100px;
+        line-height: 50px;
     }
 
     .header .menu h1 {
         font-size: 0;
+        align-self: center;
+        margin: 10px 0 0 0;
     }
 
     .menu .container {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
 
@@ -746,8 +749,9 @@
 
     .menu .gnb>ul {
         display: flex;
-        gap: 40px;
-        font-size: 17px;
+        justify-content: space-around;
+        gap: 30px;
+        font-size: 16px;
         font-weight: 500;
     }
 
