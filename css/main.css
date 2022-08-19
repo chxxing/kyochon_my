@@ -660,7 +660,7 @@
 
 .footer .bottom .container {
     flex-direction: column;
-    gap: 10px;
+    gap: 7px;
 }
 
 .footer .bottom li~li::before {
