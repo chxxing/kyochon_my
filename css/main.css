@@ -682,7 +682,7 @@
 
     .Wrap {
         letter-spacing: -0.025em;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
 
     .container {
