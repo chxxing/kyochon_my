@@ -22,6 +22,7 @@ reset
 
 html {
     box-sizing: border-box;
+    font-size: 10px;
 }
 
 *,
@@ -36,8 +37,10 @@ body {
     padding: 0;
     font-family: 'Noto Sans KR';
     font-weight: normal;
+    font-size: 1.6rem;
     color: #333333;
     line-height: 1;
+    letter-spacing: -0.025em;
 }
 
 ul,
